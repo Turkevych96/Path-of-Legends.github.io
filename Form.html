@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="./index.html">Главная страница</a></li>
+        <li><a href="./index2.html">Вторая страница</a></li>
+        <li><a href="./Table.html">Таблицы</a></li>
+        <li><a href="./Form.html">Формы</a></li>
+    </ul>
+    <br>
+    
+    <p>
+        <!-- простая форма -->
+        <form>
+            <p><label for="text">form</label>
+            <input 
+                type="text" 
+                placeholder="Введите Имя" 
+                name="userName" 
+                id="text"
+                value=""    
+            >
+            </p>    
+            <p>
+            <textarea
+                id="comment" name="userComment" placeholder="Text"
+                ></textarea>
+            </p>
+            <input type="submit" value="send">
+            <button type="submit">Отправить</button>
+        </form>
+    </p>
+
+    <br><br><br>
+
+    <p>
+        <!-- Создание сложных Форм -->
+        <form action="">
+            <!-- Поле для имени пользователя -->
+            <p>
+                <label for="userName">Имя пользователя:</label>
+                <input type="text" name="" id="userName" placeholder="Введите имя" required>
+            </p>
+            <!-- Поле для электронной почты -->
+            <p>
+                <label for="userEmail">Email:</label>
+                <input type="email" name="" id="userEmail" placeholder="Введите почту">
+            </p>
+            <!-- Поле с датой -->
+            <p>
+                <label for="date">Дата:</label>
+                <input id="date" type="date">
+            </p>
+            <!-- Поле для пароля -->
+            <p>
+                <label id="" for="password">Пароль:</label>
+                <input id="password" type="password">
+            </p>
+
+            
+            <!-- Чек боксы -->
+            <h4>Чекбоксы</h4>
+            <p>
+                <input id="DenGlad" type="checkbox">
+                <label for="DenGlad">DenGlad</label>
+                <br>
+                
+                <input id="Turkevych" type="checkbox">
+                <label for="Turkevych">Turkevych</label>
+                <br>
+
+                <input id="Hpolli" type="checkbox">
+                <label for="Hpolli">Hpolli</label>
+                <br>
+
+                <label>
+                    <input id="Sava1989N1" type="checkbox"> Sava1989N1    
+                </label>
+            </p>
+
+            <!-- Выбор одного из вариантов. name="" одинаковое -->
+            <input type="radio" id="tea" name="drink">
+            <label for="tea">Чай</label>
+            <br>
+
+            <input type="radio" id="coffee"  name="drink">
+            <label for="coffee">Кофе</label>
+            <br>
+
+            <input type="radio" id="cappuccino" name="drink">
+            <label for="cappuccino">Капучино</label>
+            <br><br>
+
+            <!-- Выбор одного из вариантов -->
+            <label for="select-city">Выбор города</label>
+            <select name="" id="select-city">
+                <option value="Kiev">Киев</option>
+                <option value="smila">Смела</option>
+                <option value="atlanta" selected>Atlanta</option>
+            </select>
+            <br><br>
+
+            <!-- Прикрепить Файл -->
+            <label for="file">Прикрепите файл</label><br>
+            <input type="file" name="" id="file">
+            <br><br>
+
+            <!-- Кнопка для отправки формы -->
+            <input type="submit" name="" id="">
+            <!-- Кнопка для сброса данных -->
+            <input type="reset" name="" id="">
+
+        </form>
+    </p>
+</body>
+</html>

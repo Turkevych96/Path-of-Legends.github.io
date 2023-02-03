@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="en, ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Path of Legends</title>
-        <link reg="stylesheet" href="style.css" />
+        <title>Таблицы</title>
     </head>
     <body>
-        <header>
-			<h1>Path of Legends</h1>
-			<div class="school-name">cайт гильдии</div>
-		</header>
-
+        
         <ul>
             <li><a href="./index.html">Главная страница</a></li>
             <li><a href="./index2.html">Вторая страница</a></li>
             <li><a href="./Table.html">Таблицы</a></li>
             <li><a href="./Form.html">Формы</a></li>
         </ul>
-        <br>
-
+        <br><br>
         
-<br>
-<!-- Готовая таблица для Path of Legends -->
+        <!-- Пример и возможности таблицы -->
+        <table border="2", width="200">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td colspan="2">3</td>
+                <!-- <td></td> -->
+
+            </tr>
+            <tr>
+                <td rowspan="2", colspan="2">4</td>
+                <!-- <td>1</td> -->
+                <td>5</td>
+                <td rowspan="2">6</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <!-- <td>1</td> -->
+                <td>7</td>
+                <!-- <td>1</td> -->
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Готовая таблица для Path of Legends -->
         <table border="2", width="350">
             <thead>
                 <tr><th colspan="4">Доход</th></tr>
@@ -70,9 +87,10 @@
                 </tr>
             </tbody>           
         </table>
-<br>
 
 
-        <script src="main.js"></script>
+
+
+
     </body>
 </html>
